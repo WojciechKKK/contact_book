@@ -1,0 +1,427 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Open Sans', sans-serif; */
+  font-family: 'Roboto', sans-serif;
+  background: rgba(206, 183, 153, 0.3);
+}
+
+button {
+  display: inline-block;
+}
+
+.container {
+  margin: 0 auto;
+  width: 500px;
+  /* border: 1px solid black; */
+  overflow: hidden;
+}
+
+
+
+/* główne MENU */
+.panel{
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 50px;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+.showEverything {
+  width: 100%;
+  color: white;
+  font-size: 25px;
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 10px;
+  letter-spacing: 0.1em;
+
+  font-family: 'Bowlby One SC', cursive;
+/* font-family: 'Sigmar One', cursive; */
+} 
+.contactList span {
+  /* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Freckle Face', cursive; */
+font-weight: 700;
+}
+.list span {
+  font-weight: 100;
+}
+.sectionAddNewContact {
+  border: 1px solid grey;
+  /* margin-bottom: 50px; */
+  background: white;
+  border-radius: 20px;
+  width: 50%;
+  margin: 30px auto;
+  margin-top: 10px;
+}
+.addNewContact{
+  width: 80%;
+  color: black;
+  font-size: 20px;
+  background: white;
+  display: inline-block;
+  /* font-family: 'Freckle Face', cursive; */
+  
+}
+.addImg{
+  display: inline-block;
+  width: 40px;
+  height: 25px;
+  background-image: url('../img/contact.png');
+  background-repeat: no-repeat;
+  
+}
+.showEverything {
+  background-color: #1cbc9f;
+  border: 1px solid #1cbc9f;
+}
+
+.showEverything:hover {
+  background-color: #138671;
+}
+
+/* ukrywa buttony */
+.hide{
+  display: none
+}
+
+ /* DODAJ nowy kontakt*/
+ .searchAndContact  {
+  display:none;
+
+  
+}
+.formularz {
+  display:none;
+  margin-top: 0px;
+
+}
+
+.formularz {
+    /* position: absolute;
+    width: 50%;
+    height: 500px;
+    left: 25%;
+    top: 50px; */
+    height: 100%;
+    width: 99%;
+    z-index: 1;
+    background: rgba(163, 161, 161, 0.48);
+    padding-top: 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+
+.addContact, .btnAdd{
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+}
+
+#sendContact, #cancelAdd{
+  margin-top: 25px 0;
+  display: inline-block;
+  border-radius: 10px;
+  /* width: 50%; */
+  height: 40px;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  background:  #1c84c6;
+  color: white;
+  /* font-family: 'Freckle Face', cursive; */
+  
+}
+#sendContact{
+  /* background: #1c84c6; */
+  /* border: 1px solid  #1c84c6; */
+  width: 49%;
+  margin: 20px auto;
+  display: inline-block
+}
+#cancelAdd{
+  width: 49%;
+  margin: 20px auto;
+  display: inline-block
+}
+ 
+#sendContact:hover {
+  color: #white;
+  background: black;
+  border: white;
+}
+
+#cancelAdd:hover{
+  color: white;
+  background: black;
+  border: white;
+}
+
+.form {
+  height: 20px;
+  font-size: 15px;
+  width: 80%;
+  border-radius: 10px;
+  border-color: #e7eaec;
+  color: #0f4464;
+  margin-top: 10px;
+  padding: 7px;
+}
+
+h1 {
+  font-size: 20px;
+  color: black;
+  padding: 10px; 
+  font-weight: 700;
+  margin: 20px auto;
+  width: 40%;
+  border-bottom: 2px solid black;
+  /* font-family: 'Freckle Face', cursive; */
+  text-transform: uppercase;
+}
+
+
+.searchValue{
+  border: none;
+	border-bottom: 2px solid rgb(71, 174, 151);
+  font-size: 1.5em;
+  background: transparent;
+}
+
+.infoAdd {
+  font-size: 20px;
+  color: white;
+  background: #1c84c6;;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: 700;
+  padding: 20px;
+  margin-top: 40px;
+}
+.reset{
+  margin-bottom: 20px;
+  font-size: 9px;
+  display: block;
+  margin: 0 auto;
+}
+
+
+/* ::-webkit-input-placeholder {
+  color: blue;
+  }
+  :-moz-placeholder { 
+  color: blue;
+  }
+  ::-moz-placeholder { 
+  color: blue;
+  }
+  :-ms-input-placeholder {
+  color: blue;
+  } */
+
+/* lista KONTAKTÓW */
+
+.placeForContact{
+  margin: 10px auto;
+}
+
+.searchPlace{
+  width: 100%;
+}
+
+.searchValue{
+  width: 80%;
+  height: 40px;
+  margin-bottom: 30px;
+}
+
+
+.searchContact, .cancelSearchContact{
+  width: 9%;
+  display: inline-block;
+  cursor: pointer;
+  float: right;
+  background-repeat: no-repeat;
+  background-position: center; 
+  height: 40px;
+}
+
+.searchContact {
+  background-image: url('../img/lupa.png');
+  background-repeat: no-repeat
+}
+
+.cancelSearchContact {
+  background-image: url('../img/clear.png');
+  background-repeat: no-repeat
+}
+
+.searchContact:hover, .cancelSearchContact:hover {
+  transform: scale(1.5);
+}
+
+.list {
+ margin-top: 10px;
+
+}
+li{
+  list-style-type: none;
+  margin-left: -38px;
+  margin-top: 10px;
+  padding: 10px 0 10px 10px;
+  border-radius: 10px;
+}
+
+li:hover{
+  background: rgba(163, 161, 161, 0.48);
+
+}
+
+
+span{
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+
+.delete, .showChange {
+  height: 25px;
+  cursor: pointer;
+  margin-right: 5px;
+  width: 30px;
+  float: right;
+  
+}
+.edit{
+  height: 100%;
+  cursor: pointer;
+  width: 50px;
+  color: white;
+  background: #1c84c6;
+  text-align: center;
+  margin-right: 5px;
+  margin-top: 15px;
+  display: inline-block;
+  font-size: 12px;
+}
+
+.edit:hover {
+  background: #1c85c6b2;
+}
+.telContact::after {
+content: ""; 
+display: table; 
+clear: both; 
+}
+
+.cancel {
+  font-size: 12px;
+  height: 100%;
+  width: 50px;
+  color: black;
+  background: white;
+  border: 1px solid black;
+  text-align: center;
+  margin-right: 5px;
+  margin-top: 15px;
+  display: inline-block;
+}
+
+.delete{
+  background-image: url('../img/delete.png');
+  background-repeat: no-repeat;
+  background-size: contain 
+}
+
+.showChange{
+  background-image: url('../img/szczegoly.png');
+  background-repeat: no-repeat;
+  background-size: contain 
+}
+
+.showChange:hover, .delete:hover {
+  transform: scale(1.5);
+}
+.emailContact, .telContact{
+  font-size: 15px;
+}
+
+
+.emailContact::before {
+  content: '. ';
+  padding: 8px;
+  margin: 0 7px;
+  padding-top: 0px;
+  background-image: url('../img/sms.png');
+  background-repeat: no-repeat;
+  background-size: contain 
+}
+.telContact::before {
+  content: ' ';
+  padding: 6px;
+  margin: 0 7px;
+  padding-top: 0px;
+  background-image: url('../img/phone.png');
+  background-repeat: no-repeat;
+  background-size: contain 
+}
+
+/* logo */
+.logo{
+  border: 2px solid  #1c84c6;;
+  border-radius: 100%;
+  display: inline-block;
+  color: #1c84c6;
+  text-transform: uppercase;
+  width: 30px;
+  text-align: center;
+  font-weight: 700;
+  padding: 5px;
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+/* sortowanie */
+.surnameContact {
+  text-transform: uppercase;
+}
+.nameContact {
+  text-transform: uppercase;
+}
+
+.name, .surname {
+  text-transform: uppercase
+}
+
+
+.imgArrow {
+  display: inline-block;
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 10px solid blue;
+}
+
+/* counter */
+.count{
+  font-size: 10px;
+  color: grey;
+}
+
+.sorts{
+  font-size: 10px;
+  color: grey;
+  float: right;
+  margin-right: 5px;
+}
+
+select{
+  background: none;
+  border: none;
+}

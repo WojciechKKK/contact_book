@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>CodersLab</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Bungee+Inline|Cabin+Sketch|Freckle+Face|Londrina+Outline|Rock+Salt|Sigmar+One" rel="stylesheet">
+    <script src="./js/app.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+    <div class="panel">
+        <button class="showEverything">Pokaż książkę adresową</button>
+    </div>
+
+    <div class="container">
+        <div class="placeForNewContact">
+            <div class="formularz">
+                <h1>Nowy kontakt</h1>
+                <form class="addContact">
+                    <label>
+                         <input class="form name" type="text" placeholder="Imię">
+                    </label>
+                    <label>
+                        <input class="form surname" type="text" placeholder="Nazwisko">
+                    </label>
+                    <label>
+                        <input class="form email"type="email" placeholder="E-mail">
+                    </label>
+                    <label>
+                        <input class="form tel" type="text" placeholder="Numer telefonu">
+                    </label>
+                </form>
+                <div class="btnAdd">
+                    <button class="reset">Wyczyść</button>
+                    <button id="sendContact">Dodaj kontakt</button>
+                    <button id="cancelAdd">Anuluj</button>
+                </div>
+            </div>
+        </div>
+
+         <div class="placeForContact">
+            <div class="searchAndContact">
+                <div class="sectionAddNewContact"><div class="addImg"></div>
+                <div class="addNewContact">Dodaj nowy kontakt</div></div>
+                    <div class="searchPlace">
+                        <input type="text" class="searchValue" placeholder="Szukaj"  /> 
+                        <div class="cancelSearchContact"></div>
+                        <div class="searchContact"></div>  
+                        <span class="count">Ilość wszystkich kontaktów:</span>
+                        <span class="sorts">Sortuj według:
+                            <select name="changeSorts">
+                                <option value="-1">wybierz</option>
+                                <option value="imię">imię</option>
+                                <option value="nazwisko">nazwisko</option>
+                            </select>
+                        </span>
+                    </div>
+                    
+                    <ul class="contactList"></ul>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+

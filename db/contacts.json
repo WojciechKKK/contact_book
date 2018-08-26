@@ -1,0 +1,32 @@
+{
+  "contacts": [
+    {
+      "name": "ADAM",
+      "surname": "KOWALSKI",
+      "email": "ADAM@GMAIL.COM",
+      "telephone": "789456123",
+      "id": 7
+    },
+    {
+      "name": "TEST",
+      "surname": "TEST",
+      "email": "TEST@ONET.PL",
+      "telephone": "465123654",
+      "id": 9
+    },
+    {
+      "name": "ALEKSANDER",
+      "surname": "NOWAK",
+      "email": "ALEKS@GMAIL.COM",
+      "telephone": "456123789",
+      "id": 10
+    },
+    {
+      "name": "CODERS",
+      "surname": "LAB",
+      "email": "",
+      "telephone": "",
+      "id": 12
+    }
+  ]
+}
