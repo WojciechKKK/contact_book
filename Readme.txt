@@ -9,7 +9,6 @@ Startup:
 Go to the 'db' folder and start JSON Server with the command:
 json-server --watch contacts.json
 
-
 Used technologies:
 JavaScript, ES6, jQuery.
 
