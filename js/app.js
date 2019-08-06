@@ -1,22 +1,41 @@
+// $('.showEverything').on('click', function(){
+// 	let showEl = $('.showEverything').text();
+// 	if(showEl == 'Pokaż książkę adresową') {
+// 		$('.contactList').children().remove();
+// 		downloadContact();
+// 		$('.searchAndContact').slideDown();
+// 		counterContact();
+// 	$('.showEverything').text('Ukryj książkę adresową');
+// 		//dodanie counter z iloscia kontaktow
+// 	} else if(showEl == 'Ukryj książkę adresową'){
+// 			$('.searchAndContact').slideUp();
+// 		$('.showEverything').text('Pokaż książkę adresową');
+		
+// 	}
+// })
 
-$(function () {
+
 	const contactList = $('.contactList');
 	let adresUrl = 'http://localhost:3000/contacts';
 
-	//slider dla pokazania wszystkich kontaktow
-	$('.showEverything').on('click', function(){
-		if($('.showEverything').text() == 'Pokaż książkę adresową') {
+	let showElement = () => {
+		let showEl = $('.showEverything').text();
+		if(showEl == 'Pokaż książkę adresową') {
 			$('.contactList').children().remove();
 			downloadContact();
 			$('.searchAndContact').slideDown();
 			counterContact();
 		$('.showEverything').text('Ukryj książkę adresową');
 			//dodanie counter z iloscia kontaktow
-		} else {
-			$('.searchAndContact').slideUp();
+		} else if(showEl == 'Ukryj książkę adresową'){
+				$('.searchAndContact').slideUp();
 			$('.showEverything').text('Pokaż książkę adresową');
+			
 		}
-	})
+	}
+
+	//slider dla pokazania wszystkich kontaktow
+	$('.showEverything').on('click', showElement)
 
 	//slider dla  dodania kontaktu
 	$('.sectionAddNewContact').on('click', function(){
@@ -535,4 +554,3 @@ sort();
 	addContact();
 	removeContact();
 	changeContact();
-})

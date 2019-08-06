@@ -8,13 +8,6 @@
       "id": 7
     },
     {
-      "name": "TEST",
-      "surname": "TEST",
-      "email": "TEST@ONET.PL",
-      "telephone": "465123654",
-      "id": 9
-    },
-    {
       "name": "ALEKSANDER",
       "surname": "NOWAK",
       "email": "ALEKS@GMAIL.COM",
@@ -27,6 +20,13 @@
       "email": "",
       "telephone": "",
       "id": 12
+    },
+    {
+      "name": "JAN",
+      "surname": "KOWALSKI",
+      "email": "JAN.KOWALSKI@GMAIL.COM",
+      "telephone": "653598154",
+      "id": 13
     }
   ]
 }
