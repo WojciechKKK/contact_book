@@ -27,3 +27,9 @@ To run this project, go to the 'db' folder and start JSON Server:
 ```
 $ json-server --watch contacts.json
 ```
+Next, install it locally using npm:
+
+```
+$ npm install
+$ npm start
+```
